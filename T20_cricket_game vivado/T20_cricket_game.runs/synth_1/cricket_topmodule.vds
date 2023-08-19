@@ -1,0 +1,268 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Oct 31 13:16:39 2020
+# Process ID: 16728
+# Current directory: C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.runs/synth_1
+# Command line: vivado.exe -log cricket_topmodule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cricket_topmodule.tcl
+# Log file: C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.runs/synth_1/cricket_topmodule.vds
+# Journal file: C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source cricket_topmodule.tcl -notrace
+Command: synth_design -top cricket_topmodule -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20008
+WARNING: [Synth 8-2611] redeclaration of ansi port clk is not allowed [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/slow_clk.v:28]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1036.680 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cricket_topmodule' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/cricket_topmodule.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/debounce.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dff' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dff' (1#1) [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (2#1) [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/debounce.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cricket_game' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/cg1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lfsr' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/lfsr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'lfsr' (3#1) [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/lfsr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'team_score' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/team_score.v:23]
+	Parameter single bound to: 16 - type: integer 
+	Parameter double bound to: 32 - type: integer 
+	Parameter triple bound to: 48 - type: integer 
+	Parameter four bound to: 64 - type: integer 
+	Parameter six bound to: 96 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'team_score' (4#1) [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/team_score.v:23]
+INFO: [Synth 8-6157] synthesizing module 'led_controller' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/led_controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'scroll_led' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/scroll_led.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'scroll_led' (5#1) [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/scroll_led.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'led' does not match port width (16) of module 'scroll_led' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/led_controller.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'led_controller' (6#1) [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/led_controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'score_comparator' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/score_comparator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'score_comparator' (7#1) [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/score_comparator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cricket_game' (8#1) [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/cg1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bcd_display' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/cg2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'slow_clk' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/slow_clk.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'slow_clk' (9#1) [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/slow_clk.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bin2bcd' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/bin2bcd.v:23]
+WARNING: [Synth 8-567] referenced signal 'bin' should be on the sensitivity list [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/bin2bcd.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'bin2bcd' (10#1) [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/bin2bcd.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter_2bit' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/counter_2bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter_2bit' (11#1) [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/counter_2bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4_1' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/mux4_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4_1' (12#1) [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/mux4_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (13#1) [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bcd2_7seg' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/bcd2_7seg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bcd2_7seg' (14#1) [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/bcd2_7seg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_display' (15#1) [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/cg2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cricket_topmodule' (16#1) [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/cricket_topmodule.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1036.680 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1036.680 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1036.680 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+WARNING: [Synth 8-327] inferring latch for variable 'bcd_reg' [C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.srcs/sources_1/new/bin2bcd.v:51]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1036.680 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   24 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 6     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 26    
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 8     
+	   2 Input    4 Bit        Muxes := 8     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1102.266 ; gain = 65.586
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1102.266 ; gain = 65.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1102.266 ; gain = 65.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1102.266 ; gain = 65.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1102.266 ; gain = 65.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1102.266 ; gain = 65.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1102.266 ; gain = 65.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1102.266 ; gain = 65.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1102.266 ; gain = 65.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    26|
+|3     |LUT1   |    13|
+|4     |LUT2   |    21|
+|5     |LUT3   |    18|
+|6     |LUT4   |    38|
+|7     |LUT5   |    28|
+|8     |LUT6   |    99|
+|9     |MUXF7  |     8|
+|10    |FDCE   |    58|
+|11    |FDPE   |     6|
+|12    |FDRE   |    52|
+|13    |LD     |    15|
+|14    |IBUF   |     4|
+|15    |OBUF   |    28|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+-----------------+------+
+|      |Instance  |Module           |Cells |
++------+----------+-----------------+------+
+|1     |top       |                 |   415|
+|2     |  cg0     |debounce         |     4|
+|3     |    cg0_1 |dff              |     2|
+|4     |    cg0_2 |dff_0            |     2|
+|5     |  cg1     |cricket_game     |   319|
+|6     |    cg1_1 |lfsr             |    22|
+|7     |    cg1_2 |team_score       |   181|
+|8     |    cg1_3 |led_controller   |    93|
+|9     |      l1  |scroll_led       |    53|
+|10    |    cg1_4 |score_comparator |    23|
+|11    |  cg2     |bcd_display      |    59|
+|12    |    cg2_1 |slow_clk         |    28|
+|13    |    cg2_2 |bin2bcd          |    15|
+|14    |    cg2_3 |counter_2bit     |    16|
++------+----------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1102.266 ; gain = 65.586
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1102.266 ; gain = 65.586
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1102.266 ; gain = 65.586
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1102.266 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1102.266 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  LD => LDCE: 15 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1102.266 ; gain = 65.586
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.runs/synth_1/cricket_topmodule.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cricket_topmodule_utilization_synth.rpt -pb cricket_topmodule_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 31 13:17:21 2020...

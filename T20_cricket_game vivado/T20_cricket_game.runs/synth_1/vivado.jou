@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Oct 31 13:16:39 2020
+# Process ID: 16728
+# Current directory: C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.runs/synth_1
+# Command line: vivado.exe -log cricket_topmodule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cricket_topmodule.tcl
+# Log file: C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.runs/synth_1/cricket_topmodule.vds
+# Journal file: C:/Xilinx/projects/T20_cricket_game/T20_cricket_game.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source cricket_topmodule.tcl -notrace
